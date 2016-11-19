@@ -91,8 +91,6 @@
         <service android:name=".ppareit.swiftp.WifiStateChangeReceiver$StartServerService"/>
         <service android:name=".ppareit.swiftp.WifiStateChangeReceiver$StopServerService"/>
 
-        <activity android:name=".ui.activity.AboutActivity">
-        </activity>
     </application>
 
 </manifest>
