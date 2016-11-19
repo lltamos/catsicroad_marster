@@ -80,8 +80,7 @@
     </string-array>
 
 
-
-<string name="about_dlg_title">FTP Server About</string>
+    <string name="about_dlg_title">FTP Server About</string>
 <string name="about_dlg_message">
         <b>Description: </b>
         FTP Server (SwiFTP) allows you to run an ftp server on your android device.\n\n\
@@ -96,41 +95,41 @@
         <b>License: </b>
         GNU General Public License v3.0\n\n
     </string>
-<string name="notif_server_starting">Starting at %s</string>
-<string name="notif_title">ftp文件管理正在启用</string>
-<string name="notif_text">地址： %s</string>
-<string name="notif_stop_text">Stop server</string>
+    <string name="notif_server_starting">Starting at %s</string>
+    <string name="notif_title">ftp文件管理正在启用</string>
+    <string name="notif_text">地址： %s</string>
+    <string name="notif_stop_text">Stop server</string>
 
-<string name="nsd_servername_postfix">FTP Server</string>
+    <string name="nsd_servername_postfix">FTP Server</string>
 
-<string name="select">Select</string>
-<string name="cancel">Cancel</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
 
-<string name="feedback">Send feedback</string>
-<string name="about">About</string>
+    <string name="feedback">Send feedback</string>
+    <string name="about">About</string>
 
-<string name="autoconnect_label">Autoconnect settings...</string>
-<string name="autoconnect_summary">Select the wifi networks on which to autoconnect</string>
+    <string name="autoconnect_label">Autoconnect settings...</string>
+    <string name="autoconnect_summary">Select the wifi networks on which to autoconnect</string>
 <string name="autoconnect_error_enable_wifi_for_access_points">
         Enable wifi to get list of access points
     </string>
 
     <!-- old strings -->
-<string name="cant_get_url">Can\'t retrieve url</string>
-<string name="unknown">unknown</string>
-<string name="ok">OK</string>
-<string name="username_validation_error">The password must consist of 1 or more alphanumeric characters. No other characters are allowed.</string>
-<string name="password_validation_error">The password must consist of 1 or more alphanumeric characters. No other characters are allowed.</string>
-<string name="port_validation_error">The port number must be in the range 1 to 65535.</string>
-<string name="wifi_state_receiver_label">WifiStateReceiver</string>
-<string name="pst_connecting">connecting</string>
-<string name="pst_connected">connected</string>
-<string name="pst_failed">failed</string>
-<string name="pst_unreachable">unreachable</string>
-<string name="pst_disconnected">disconnected</string>
-<string name="storage_warning">Warning: storage is not available. You may want to unmount it.</string>
-<string name="widget_name">FTP Server Widget</string>
-<string name="notif_settings_text">Settings</string>
+    <string name="cant_get_url">Can\'t retrieve url</string>
+    <string name="unknown">unknown</string>
+    <string name="ok">OK</string>
+    <string name="username_validation_error">The password must consist of 1 or more alphanumeric characters. No other characters are allowed.</string>
+    <string name="password_validation_error">The password must consist of 1 or more alphanumeric characters. No other characters are allowed.</string>
+    <string name="port_validation_error">The port number must be in the range 1 to 65535.</string>
+    <string name="wifi_state_receiver_label">WifiStateReceiver</string>
+    <string name="pst_connecting">connecting</string>
+    <string name="pst_connected">connected</string>
+    <string name="pst_failed">failed</string>
+    <string name="pst_unreachable">unreachable</string>
+    <string name="pst_disconnected">disconnected</string>
+    <string name="storage_warning">Warning: storage is not available. You may want to unmount it.</string>
+    <string name="widget_name">FTP Server Widget</string>
+    <string name="notif_settings_text">Settings</string>
     <string name="swiftp_name">FTP Server</string>
     <string name="swiftp_name_free">FTP Server (Free)</string>
     <string name="swiftp_name_demo">FTP Server (Demo)</string>
