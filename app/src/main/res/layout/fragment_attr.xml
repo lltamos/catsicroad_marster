@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.collect_master.app.weight.WarrScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="路线" />
+
+        <View style="@style/line_style"></View>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="路段" />
+
+        <View style="@style/line_style"></View>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="桥梁" />
+
+        <View style="@style/line_style"></View>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="隧道" />
+
+        <View style="@style/line_style"></View>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="乡镇" />
+
+        <View style="@style/line_style"></View>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="建制村" />
+
+        <View style="@style/line_style"></View>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="自然村" />
+
+        <View style="@style/line_style"></View>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_item_style"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:elevation="@dimen/elevation_3dp"
+            android:text="..." />
+
+        <View style="@style/line_style"></View>
+
+    </LinearLayout>
+</com.collect_master.app.weight.WarrScrollView>
