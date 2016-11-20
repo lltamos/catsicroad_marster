@@ -53,6 +53,7 @@
             <View style="@style/line_style"></View>
 
             <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_advice"
                 style="@style/text_item_style"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:drawablePadding="@dimen/activity_horizontal_margin"
@@ -64,7 +65,7 @@
 
             <android.support.v7.widget.AppCompatTextView
                 style="@style/text_item_style"
-
+                android:id="@+id/atv_account"
                 android:drawablePadding="@dimen/activity_horizontal_margin"
                 android:drawableRight="@drawable/ic_chevron_right_black_24dp"
                 android:elevation="@dimen/elevation_3dp"
@@ -73,6 +74,7 @@
             <View style="@style/line_style"></View>
 
             <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_about"
                 style="@style/text_item_style"
                 android:drawablePadding="@dimen/activity_horizontal_margin"
                 android:drawableRight="@drawable/ic_chevron_right_black_24dp"

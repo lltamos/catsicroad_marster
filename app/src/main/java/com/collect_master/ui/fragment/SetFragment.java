@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.SwitchCompat;
+import android.view.View;
 import android.widget.TextView;
 
 import com.collect_master.R;
@@ -11,6 +12,9 @@ import com.collect_master.app.Constants;
 import com.collect_master.app.tools.CommonUtils;
 import com.collect_master.app.tools.PreferencesUtils;
 import com.collect_master.contract.BaseFragment;
+import com.collect_master.ui.activity.AboutActivity;
+import com.collect_master.ui.activity.AccountActivity;
+import com.collect_master.ui.activity.AdviceActivity;
 import com.collect_master.ui.activity.SettingActivity;
 
 import butterknife.BindView;
@@ -44,19 +48,29 @@ public class SetFragment extends BaseFragment {
     }
 
 
-    @OnClick(R.id.sc_wake_lock)
-    public void onClick() {
+    @OnClick({R.id.sc_wake_lock, R.id.atv_advice, R.id.atv_account, R.id.atv_about})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.sc_wake_lock:
+                boolean scWakeLockChecked = scWakeLock.isChecked();
 
-        boolean scWakeLockChecked = scWakeLock.isChecked();
-
-        if (PreferencesUtils.putBoolean(mContext, Constants.SC_WAKE_LOCK, scWakeLockChecked)) {
-            if (scWakeLockChecked) {
-                CommonUtils.toggleWalkLook(mContext, true);
-            } else {
-                CommonUtils.toggleWalkLook(mContext, false);
-            }
+                if (PreferencesUtils.putBoolean(mContext, Constants.SC_WAKE_LOCK, scWakeLockChecked)) {
+                    if (scWakeLockChecked) {
+                        CommonUtils.toggleWalkLook(mContext, true);
+                    } else {
+                        CommonUtils.toggleWalkLook(mContext, false);
+                    }
+                }
+                break;
+            case R.id.atv_advice:
+                CommonUtils.toActivity(mContext, new Intent(mContext, AdviceActivity.class));
+                break;
+            case R.id.atv_account:
+                CommonUtils.toActivity(mContext, new Intent(mContext, AccountActivity.class));
+                break;
+            case R.id.atv_about:
+                CommonUtils.toActivity(mContext, new Intent(mContext, AboutActivity.class));
+                break;
         }
     }
-
-
 }
