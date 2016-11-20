@@ -1,14 +1,13 @@
 package com.collect_master.contract;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -23,13 +22,13 @@ public abstract class BaseFragment extends Fragment implements MvpView {
     protected View mRootView;
     protected final String sClassName = getClass().getSimpleName();
     private Unbinder unbinder;
-    protected Activity mContext;
+    protected AppCompatActivity mContext;
 
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mContext = getActivity();
+        mContext = (AppCompatActivity) getActivity();
     }
 
     @Nullable

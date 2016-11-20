@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,9 +12,7 @@ import com.collect_master.app.tools.ActionBarManager;
 import com.collect_master.app.weight.SearchBar;
 import com.collect_master.app.weight.SearchListView;
 import com.collect_master.contract.BaseActivity;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.collect_master.ui.adapter.MapListAdapter;
 
 import butterknife.BindView;
 
@@ -43,15 +40,7 @@ public class UncapMapActivity extends BaseActivity {
             Toast.makeText(this, position + "", Toast.LENGTH_SHORT).show();
         });
 
-        List list = new ArrayList();
-        for (int x = 0; x < 100; x++) {
-            list.add(x + "");
-        }
-
-        ArrayAdapter<String> myArrayAdapter =
-                new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
-
-        mListView.setAdapter(myArrayAdapter);
+        mListView.setAdapter(new MapListAdapter());
         mListView.setEnableRefresh(false);
 
     }

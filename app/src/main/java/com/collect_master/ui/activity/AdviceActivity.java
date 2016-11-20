@@ -10,7 +10,7 @@ import com.collect_master.contract.BaseActivity;
 
 import butterknife.BindView;
 
-public class AboutActivity extends BaseActivity {
+public class AdviceActivity extends BaseActivity {
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.title)
@@ -21,11 +21,11 @@ public class AboutActivity extends BaseActivity {
     public void bindView(Bundle savedInstanceState) {
         setSupportActionBar(toolbar);
         ActionBarManager.initBackTitle(getSupportActionBar());
-        title.setText("关于");
+        title.setText("用户反馈");
     }
 
     @Override
     public int getLayoutResId() {
-        return R.layout.activity_about;
+        return R.layout.activity_advice;
     }
 }

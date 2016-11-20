@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.SwitchCompat;
+import android.widget.TextView;
 
 import com.collect_master.R;
 import com.collect_master.app.Constants;
@@ -25,11 +26,13 @@ public class SetFragment extends BaseFragment {
     AppCompatTextView tv_collect;
     @BindView(R.id.sc_wake_lock)
     SwitchCompat scWakeLock;
+    @BindView(R.id.title)
+    TextView title;
 
 
     @Override
     public void bindView(Bundle savedInstanceState) {
-
+        title.setText("设置");
         tv_collect.setOnClickListener(v -> {
             CommonUtils.toActivity(mContext, new Intent(mContext, SettingActivity.class));
         });

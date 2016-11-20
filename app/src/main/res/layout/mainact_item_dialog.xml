@@ -22,7 +22,7 @@
             android:id="@+id/fv_line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnWidth="120dp"
+            android:columnWidth="100dp"
             android:horizontalSpacing="30dp"
             android:numColumns="4"
             android:scrollbars="none"

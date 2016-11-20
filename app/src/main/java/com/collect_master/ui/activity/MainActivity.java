@@ -2,7 +2,6 @@ package com.collect_master.ui.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialog;
-import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 
 import com.collect_master.R;
@@ -29,8 +28,6 @@ public class MainActivity extends MvpActivity implements MainVIew {
     @BindView(R.id.viewPager)
     APSTSViewPager viewPager;
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
 
     private BottomSheetDialog sheet;
 
@@ -43,7 +40,6 @@ public class MainActivity extends MvpActivity implements MainVIew {
 
     @Override
     public void bindView(Bundle savedInstanceState) {
-        setSupportActionBar(toolbar);
         viewPager.setAdapter(new TabsAdapter(getSupportFragmentManager(), this));
         tabs.setViewPager(viewPager);
         sheet = new BottomSheetDialog(this);

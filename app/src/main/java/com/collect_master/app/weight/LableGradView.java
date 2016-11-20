@@ -88,12 +88,17 @@ public class LableGradView extends GridView {
                 }
 
                 lable.setOnClickListener(view1 -> {
-                    ((MainActivity) AppManager.getAppManager().currentActivity()).hideExtra();
-                    Intent intent = new Intent(AppManager.getAppManager().currentActivity(), CollectListActivity.class);
-                    int value = datasId == R.array.m_line_label ? 0 : 1;
-                    intent.putExtra(Constants.SELECT_COLLECT_TAG, value);
-                    intent.putExtra(Constants.SELECT_COLLECT_LABE, mData[i]);
-                    CommonUtils.toActivity(AppManager.getAppManager().currentActivity(), intent);
+
+                    if (datasId==R.array.m_line_label){
+                        ((MainActivity) AppManager.getAppManager().currentActivity()).hideExtra();
+                        Intent intent = new Intent(AppManager.getAppManager().currentActivity(), CollectListActivity.class);
+                        int value = datasId == R.array.m_line_label ? 0 : 1;
+                        intent.putExtra(Constants.SELECT_COLLECT_TAG, value);
+                        intent.putExtra(Constants.SELECT_COLLECT_LABE, mData[i]);
+                        CommonUtils.toActivity(AppManager.getAppManager().currentActivity(), intent);
+                    }
+
+
                 });
                 lable.setText(mData[i]);
                 return view;

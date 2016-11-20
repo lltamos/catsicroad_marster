@@ -18,7 +18,7 @@ import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 public class SynopsisObj extends Application {
     public static Context sContext;
     public static boolean allow_anonymous = true;
-    public static String chrootDir = Environment.getExternalStorageDirectory().toString()+"tencent/";
+    public static String chrootDir = Environment.getExternalStorageDirectory().toString()+"/tencent/";
     public static int portNum = 2121;
     public static boolean shouldTakeFullWakeLock = true;
     public static String username = "admin";

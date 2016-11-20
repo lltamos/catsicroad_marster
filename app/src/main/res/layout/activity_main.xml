@@ -6,9 +6,6 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <include layout="@layout/toolbar_title" />
-
-
     <com.collect_master.app.weight.APSTSViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"

@@ -4,19 +4,18 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.collect_master.R;
 import com.collect_master.app.Constants;
+import com.collect_master.app.SynopsisObj;
 import com.collect_master.app.tools.ActionBarManager;
 import com.collect_master.app.weight.SearchBar;
 import com.collect_master.app.weight.SearchListView;
 import com.collect_master.contract.BaseActivity;
 
-import java.util.ArrayList;
-import java.util.List;
 import butterknife.BindView;
 
 public class CollectListActivity extends BaseActivity {
@@ -38,19 +37,8 @@ public class CollectListActivity extends BaseActivity {
         mListView.addHeaderView(searchBar);
         View list_item=View.inflate(this,R.layout.list_item_1,null);
         mListView.addHeaderView(list_item);
-        mListView.setOnItemClickListener((parent, view, position, id) -> {
-            Toast.makeText(this, position + "", Toast.LENGTH_SHORT).show();
-        });
 
-        List list = new ArrayList();
-        for (int x = 0; x < 100; x++) {
-            list.add(x + "");
-        }
-
-        ArrayAdapter<String> myArrayAdapter =
-                new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
-
-        mListView.setAdapter(myArrayAdapter);
+        mListView.setAdapter(new CollectAdapter());
         mListView.setEnableRefresh(false);
     }
 
@@ -64,6 +52,32 @@ public class CollectListActivity extends BaseActivity {
         getMenuInflater().inflate(R.menu.add, menu);
         return true;
     }
+
+   class CollectAdapter extends BaseAdapter{
+
+
+       @Override
+       public int getCount() {
+           return 5;
+       }
+
+       @Override
+       public Object getItem(int i) {
+           return null;
+       }
+
+       @Override
+       public long getItemId(int i) {
+           return 0;
+       }
+
+       @Override
+       public View getView(int i, View view, ViewGroup viewGroup) {
+           View v=View.inflate(SynopsisObj.getAppContext(),R.layout.ac_collect_item,null);
+
+           return v;
+       }
+   }
 
 
 }

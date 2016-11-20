@@ -7,7 +7,6 @@
         android:required="true"/>
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -53,16 +52,6 @@
         </activity>
 
         <service android:name=".ppareit.swiftp.FsService"/>
-
-        <!-- <receiver -->
-        <!-- android:name="FsNotification" -->
-        <!-- android:exported="false"> -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="be.ppareit.swiftp.FTPSERVER_STARTED" /> -->
-        <!-- <action android:name="be.ppareit.swiftp.FTPSERVER_STOPPED" /> -->
-        <!-- </intent-filter> -->
-        <!-- </receiver> -->
-
         <service android:name=".ppareit.swiftp.NsdService"/>
 
         <receiver
@@ -92,6 +81,12 @@
         <service android:name=".ppareit.swiftp.WifiStateChangeReceiver$StopServerService"/>
 
         <activity android:name=".ui.activity.AboutActivity">
+        </activity>
+        <activity android:name=".ui.activity.AccountActivity">
+        </activity>
+        <activity android:name=".ui.activity.AdviceActivity">
+        </activity>
+        <activity android:name=".ui.activity.NewMapActivity">
         </activity>
     </application>
 

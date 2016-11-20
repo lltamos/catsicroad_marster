@@ -25,6 +25,7 @@ public class LayerFragment extends MvpFragment<LayerPresenter> implements LayerV
     @BindView(R.id.map)
     MapView mMap;
 
+
     @Override
     protected LayerPresenter createPresenter() {
         return new LayerPresenter(new LayerModel());
@@ -32,6 +33,9 @@ public class LayerFragment extends MvpFragment<LayerPresenter> implements LayerV
 
     @Override
     public void bindView(Bundle savedInstanceState) {
+
+
+        //去除水印
         ArcGISRuntime.setClientId("1eFHW78avlnRUPHm");
         ArcGISTiledMapServiceLayer dynamicLayout = new ArcGISTiledMapServiceLayer(BASEURL);
         mMap.addLayer(dynamicLayout);

@@ -10,22 +10,22 @@ import com.collect_master.contract.BaseActivity;
 
 import butterknife.BindView;
 
-public class AboutActivity extends BaseActivity {
+public class NewMapActivity extends BaseActivity {
+
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.title)
     TextView title;
 
-
     @Override
     public void bindView(Bundle savedInstanceState) {
         setSupportActionBar(toolbar);
         ActionBarManager.initBackTitle(getSupportActionBar());
-        title.setText("关于");
+        title.setText("新建地图");
     }
 
     @Override
     public int getLayoutResId() {
-        return R.layout.activity_about;
+        return R.layout.activity_new_map;
     }
 }
